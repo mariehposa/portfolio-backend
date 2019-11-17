@@ -20,7 +20,6 @@ function bodyValidator (req, res, next) {
         Email: req.body.email,
         Message: req.body.message
     }
-    
 
     if(data.Name && data.Email && data.Message) {
         req.valData = data;
