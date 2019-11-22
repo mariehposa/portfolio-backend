@@ -4,7 +4,8 @@
   "description": "backend for my portfolio website",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": "https://github.com/mariehposa/portfolio-backend.git",
   "author": "Adedeji Mariam <maadedeji76@student.lautech.edu.ng>",
