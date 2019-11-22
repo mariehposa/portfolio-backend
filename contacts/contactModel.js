@@ -9,7 +9,7 @@ function getContactId(id) {
 function addContact (user) {
     return db('contacts as c')
     .insert(user)
-    .then(([id]) => this.getContactId(id))
+    .where(([id]) => this.getContactId(id))
 }
 
 module.exports = {
