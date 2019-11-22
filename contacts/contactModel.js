@@ -8,8 +8,8 @@ function getContactId(id) {
 
 function addContact (user) {
     return db('contacts as c')
-    .insert(user)
-    .where(([id]) => this.getContactId(id))
+    .insert(user, 'id')
+    .then(([id]) => this.getContactId(id))
 }
 
 module.exports = {
